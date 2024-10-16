@@ -1,0 +1,262 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: aquamarine; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding-block: 1rem;
+}
+.main{
+    width: 80%;
+    /* height: 100%; */
+    /* background-color: rgb(172, 172, 201); */
+}
+.nav{
+    width: 100%;
+    /* height: 55px; */
+
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navleft{
+    width: 24%;
+    height: 100%;
+}
+
+.navcenter{
+    width: 40%;
+    height: 100%;
+    border: 1px solid rgb(124, 105, 105);
+border-radius: 30px;
+display: flex;
+/* justify-content: center; */
+align-items: center;
+padding: 10px;
+background-color: white;
+/* background-color: brown; */
+}
+.navcenter input{
+    visibility: none;
+    background-color: white;
+    border: none;
+    padding-inline: 20px;
+    font-size: 20px;
+}
+
+.navright{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+
+}
+.navright ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;;
+    align-items: center;
+}
+
+.navright li button{
+    width: 60px;
+    height: 30px;
+    /* background-color: black; */
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+.nav2{
+    width: 100%;
+    /* height: 5%; */
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+
+}
+.nav2 ul{
+    width: 60%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-block: 10px;
+    
+}
+
+.line{
+    width: 100%;
+    color: white;
+}
+
+.asia{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.asia ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    gap: 1rem;
+    padding-block: 10px;
+}
+
+.section1{
+    width: 90%;
+    
+    height: auto;
+    /* height: auto;  */
+       /* background-color: blueviolet; */
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftsection1{
+    width: 20%;
+    height: 200px;
+    border: 2px solid gray;
+    background-image: url(./img7.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftsection1 .map{
+    width: 100px;
+    padding: 10px;
+    height: 30  px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.rightsection1{
+    width: 80%;
+    height: 100%;
+    /* background-color: rgb(86, 119, 108); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rightsecA{
+    width: 95%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.hotels{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+    /* background-color: antiquewhite; */
+}
+
+.hotelboxes{
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 40%;
+gap: 1rem;
+
+}
+
+.hotelbox{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(146, 133, 133);
+}
+
+.guest{
+    padding: 20px;
+    font-size: 15px;
+    color: rgb(36, 28, 28);
+}
+
+
+
+
+
+
+
+@media(max-width:900px){
+    .navcenter{
+    display: none;
+    }
+    .navright{
+        justify-content: flex-end;
+        align-items: end;
+        display: none;
+    }
+    .navright ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav2 ul {
+        width: 80%}
+
+        .section1{
+         flex-direction: column;}
+
+         .hotelboxes{
+            width: 80%;
+            flex-direction: column;
+         }
+
+         .hotelbox {
+            width: 90%;
+            height: 60px;
+        }
+
+        .leftsection1 .map {
+            width: 70px;
+            padding: 10px;
+            height: 10px;
+            font-size: 10px;
+        }
+
+        .leftsection1 {
+            width: 70%;
+            height: 100px;
+            border: 2px solid gray;
+            background-image: url(./img7.jpg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+}
